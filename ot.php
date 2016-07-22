@@ -119,7 +119,7 @@ class Game
     // America/Chicago should be same as Independence, Missouri (CT).
     $dateTime = new DateTime($this->startDate, new DateTimeZone('America/Chicago'));
     $this->dates[] = $dateTime->format('F j Y');
-    for($i = 0; $i < $this->turnAmount ; $i++) {
+    for($i = 0; $i < $this->turnAmount; $i++) {
       $this->dates[] = $dateTime->add($dateInterval)->format('F j');
     }
   }
